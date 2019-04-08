@@ -28,6 +28,10 @@
     margin: 20px auto;
   }
 
+  .clicked span {
+    background: green;
+  }
+
   .radio-footer {
     height: 15%;
     background: $widget-grey;

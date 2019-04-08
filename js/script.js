@@ -1,4 +1,19 @@
-new Vue({
+Vue.component('card', {
+    template: '#card',
+    methods: {
+      toggle() {
+       this.showSection = !this.showSection
+      }
+    },
+    data() {
+      return {
+        showSection: false,
+        imageUrl: 'https://images.unsplash.com/photo-1547679905-3c132ce6d489?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80.jpg',
+      }
+    }
+  })
+  
+var app = new Vue({
     el: '#vue-app',
     data: {
         stations: [
@@ -14,5 +29,9 @@ new Vue({
     methods: {
 
     },
+
+    computed: {
+       
+    }
 });
 

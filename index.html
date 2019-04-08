@@ -20,11 +20,12 @@
                     </header>
                     <div class="radio-stations">
                         <ul>
-                            <li v-for="station in stations" class="station">
-                                <span>{{ station.name }}</span><span>{{ station.fm }}</span>
+                            <li v-for="station in stations">
+                                    <span>{{ station.name }}</span><span>{{ station.fm }}</span>
+                                    <card></card>
                             </li>
                         </ul>
-                    </div>  
+                    </div>
                     <footer class="radio-footer">
                         <p>currently playing</p>
                         <p>radio station name</p>
@@ -33,6 +34,19 @@
             </main>
         </div>
         
+              
+        <template id="card">
+            <div class="section">
+                <div class="title" v-on:click="toggle">
+                Toggle this radio station
+                </div>
+                <hr/>
+                <div class="body" v-show="showSection">
+                <img v-bind:src="imageUrl">
+                </div>
+            </div>
+        </template>
+
 
         <script type="text/javascript" src="js/script.js"></script>
     </body>
