@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $base-font;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top right, $bg-lightgreen, $bg-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .radio-widget {
+    width: 450px;
+    height: 600px;
+    background: $widget-navy;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+    border-radius: 10px;
+  }
+
+  .radio-header {
+    width: 100%;
+    height: 10%;
+    background: $widget-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
