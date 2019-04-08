@@ -1,5 +1,8 @@
 Vue.component('card', {
     template: '#card',
+    props: {
+        radioStation: Object
+    },
     methods: {
       toggle() {
        this.showSection = !this.showSection
