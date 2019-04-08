@@ -1,0 +1,38 @@
+.radio-widget {
+    width: 450px;
+    height: 600px;
+    background: $widget-navy;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+ 
+  }
+
+  .radio-header {
+    height: 10%;
+    background: $widget-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .radio-stations {
+    padding: 0 30px;
+    color: $widget-grey;
+  }
+
+  .station {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+  }
+
+  .radio-footer {
+    height: 15%;
+    background: $widget-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }

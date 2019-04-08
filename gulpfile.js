@@ -13,7 +13,7 @@ function compileScss() {
 
 function watch() {
     compileScss();
-    gulp.watch('scss/*.scss', compileScss)
+    gulp.watch('scss/**/*.scss', compileScss)
 }
 
 exports.watch = watch;
