@@ -1,5 +1,5 @@
 # Radio App
-An app which helps you to take care of your plants.
+A simple radio widget.
 
 [Website demo](https://agatapst.github.io/plantfully/)
 
