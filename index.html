@@ -20,33 +20,35 @@
                     </header>
                     <div class="radio-stations">
                         <ul>
+                            <!-- list names & fms of radio stations from Vue data -->
                             <li v-for="station in stations">
-                                <card v-bind:radio-station="station"></card>
+                                <card v-bind:radio-station="station" 
+                                      v-bind:show-section="currentStationName == station.name"
+                                      v-bind:on-title-click="chooseStation"></card>
                             </li>
                         </ul>
                     </div>
                     <footer class="radio-footer">
-                        <p>currently playing</p>
-                        <p>radio station name</p>
+                        <p>currently playing: {{ currentStationName }}</p>
                     </footer>
                 </section>
             </main>
         </div>
-        
               
+        <!-- radio station card component -->
         <template id="card">
             <div class="section">
-                <div class="title" v-on:click="toggle">
+                <!-- on click ask for "On title click" function property -->
+                <div class="title" v-on:click="onTitleClick(radioStation)">
+                    <!-- show name and fm of clicked radio station -->
                     <span>{{ radioStation.name }}</span><span>{{ radioStation.fm }}</span>
                 </div>
                 <hr/>
                 <div class="body" v-show="showSection">
-                <img v-bind:src="imageUrl">
+                    <img v-bind:src="imageUrl">
                 </div>
             </div>
         </template>
-
-
-        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
     </body>
 </html>
