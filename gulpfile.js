@@ -7,7 +7,7 @@ function compileScss() {
             .src("scss/main.scss")
             .pipe(sass())
             .on("error", sass.logError)
-            .pipe(gulp.dest("dist/css"))
+            .pipe(gulp.dest("css"))
     );
 }
 

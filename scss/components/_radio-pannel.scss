@@ -1,42 +1,56 @@
 .radio-widget {
-    width: 450px;
-    height: 650px;
+    width: 400px;
+    height: 600px;
     background: $widget-navy;
-    box-shadow: 0 0 3px rgba(0,0,0, 0.1);
-    border-radius: 10px;
+    box-shadow: $widget-shadow;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
- 
+    overflow: hidden;
   }
 
   .radio-header {
-    height: 30px;
+    height: 80px;
+    padding: 0 50px;
     background: $widget-grey;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    text-transform: uppercase;
   }
 
   .radio-stations {
+    height: 450px;
     padding: 0 30px;
+    overflow: scroll;
     color: $widget-grey;
   }
 
   .station {
+    margin: 30px auto;
     display: flex;
     justify-content: space-between;
-    margin: 20px auto;
-  }
-
-  .clicked span {
-    background: green;
+    cursor: pointer;
   }
 
   .radio-footer {
-    height: 40px;
+    height: 70px;
     background: $widget-grey;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    box-shadow: $widget-shadow;
   }
+
+  .footer-headline {
+    text-transform: uppercase;
+    margin: 10px auto;
+    color: $text-blue;
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+

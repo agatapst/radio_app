@@ -5,8 +5,9 @@
         <title>Turn on the radio</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
-        <link rel="stylesheet" href="dist/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
         <script src="https://unpkg.com/vue"></script>
     </head>
     <body>
@@ -14,9 +15,9 @@
             <main class="wrapper">
                 <section class="radio-widget">
                     <header class="radio-header">
-                        <h1>
-                            Stations
-                        </h1>
+                        <i class="icon fas fa-chevron-circle-left"></i>
+                        <h1>Stations</h1>
+                        <i class="icon fas fa-power-off"></i>
                     </header>
                     <div class="radio-stations">
                         <ul>
@@ -29,7 +30,8 @@
                         </ul>
                     </div>
                     <footer class="radio-footer">
-                        <p>currently playing: {{ currentStationName }}</p>
+                        <h3 class="footer-headline">currently playing:</h3>
+                        <p>{{ currentStationName }} <i class="fas fa-music"></i></p>
                     </footer>
                 </section>
             </main>
