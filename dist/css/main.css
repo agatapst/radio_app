@@ -52,8 +52,9 @@ body {
   font-family: "Lato", sans-serif; }
 
 img {
-  max-width: 50%;
-  height: auto; }
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; }
 
 .wrapper {
   width: 100vw;
@@ -66,7 +67,7 @@ img {
 
 .radio-widget {
   width: 450px;
-  height: 600px;
+  height: 650px;
   background: #05386B;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   border-radius: 10px;

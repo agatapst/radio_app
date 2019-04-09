@@ -27,12 +27,18 @@ var app = new Vue({
     },
     methods: {
         chooseStation: function (radioStation) {
-          // set current station name as the one clicked
+          // check if the current station name is the one clicked
+          if(radioStation.name === this.currentStationName) {
+            // if yes, allow to show & hide
+            this.currentStationName = null;
+          } else {
+            // if not, set current station name as the one clicked
             this.currentStationName = radioStation.name;
-        }
+          }
+        },
+        
     },
     computed: {
        
     }
 });
-

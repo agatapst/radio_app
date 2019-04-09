@@ -41,7 +41,9 @@
                 <!-- on click ask for "On title click" function property -->
                 <div class="title" v-on:click="onTitleClick(radioStation)">
                     <!-- show name and fm of clicked radio station -->
-                    <span>{{ radioStation.name }}</span><span>{{ radioStation.fm }}</span>
+                    <div class="station">
+                        <span>{{ radioStation.name }}</span><span>{{ radioStation.fm }}</span>
+                    </div>
                 </div>
                 <hr/>
                 <div class="body" v-show="showSection">
