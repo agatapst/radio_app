@@ -1,7 +1,7 @@
 # Radio App
 A simple radio widget.
 
-[Website demo](https://agatapst.github.io/plantfully/)
+[Website demo](https://agatapst.github.io/radio_app/index.html)
 
 ![Website screenshot](./images/screenshot.png)
 
@@ -30,7 +30,7 @@ Compile SASS & JS
 - Gulp 
 
 ### Status
-The basic version of the project is done. In the future, there are plans to add Wikipedia API with plant images.
+The basic version of the project is done. 
 
 ### Additional info
 The aim of the project was to learn the basics of Vue.js. 
